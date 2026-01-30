@@ -1,8 +1,30 @@
 <meta charset="utf-8" />
 
+<script>
+    document.documentElement.classList.add("gsap-preload");
+</script>
+<style>
+    .gsap-preload #hero [data-framer-name="Chips & H1"] p,
+    .gsap-preload #hero [data-framer-name="Chips & H1"] h1,
+    .gsap-preload #hero [data-framer-name="Hero Info Blocks"] .framer-O9UkP,
+    .gsap-preload #about,
+    .gsap-preload #moments,
+    .gsap-preload #faq,
+    .gsap-preload #contact-us,
+    .gsap-preload #speakers .framer-8CuKQ,
+    .gsap-preload #partners .framer-yGQVR,
+    .gsap-preload #blog .framer-ODUSC,
+    .gsap-preload #resources .framer-IbXOz,
+    .gsap-preload #testimonials [data-framer-name="Testimonial Card"] {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+</style>
 
 <script src="inline/script-1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="/js/animations.js" defer></script>
 <!-- Start of headStart -->
 
 <!-- End of headStart -->
