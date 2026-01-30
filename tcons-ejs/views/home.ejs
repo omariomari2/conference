@@ -37,29 +37,68 @@
                 if (!toggle || !panel) return;
 
                 const openClass = "is-open";
+                const hasGsap = typeof window.gsap !== "undefined";
+                panel.style.willChange = "transform, opacity";
+
                 const setOpen = (open) => {
                     toggle.setAttribute("aria-expanded", open ? "true" : "false");
                     panel.setAttribute("aria-hidden", open ? "false" : "true");
                     panel.classList.toggle(openClass, open);
                 };
 
+                const openPanel = () => {
+                    if (panel.classList.contains(openClass)) return;
+                    setOpen(true);
+                    if (!hasGsap) return;
+                    window.gsap.killTweensOf(panel);
+                    window.gsap.fromTo(
+                        panel,
+                        { opacity: 0, y: -16 },
+                        { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }
+                    );
+                };
+
+                const closePanel = () => {
+                    if (!panel.classList.contains(openClass)) return;
+                    toggle.setAttribute("aria-expanded", "false");
+                    if (!hasGsap) {
+                        setOpen(false);
+                        return;
+                    }
+                    window.gsap.killTweensOf(panel);
+                    window.gsap.to(panel, {
+                        opacity: 0,
+                        y: -12,
+                        duration: 0.25,
+                        ease: "power2.in",
+                        onComplete: () => {
+                            panel.setAttribute("aria-hidden", "true");
+                            panel.classList.remove(openClass);
+                        }
+                    });
+                };
+
                 setOpen(false);
                 toggle.addEventListener("click", (event) => {
                     event.preventDefault();
-                    setOpen(!panel.classList.contains(openClass));
+                    if (panel.classList.contains(openClass)) {
+                        closePanel();
+                    } else {
+                        openPanel();
+                    }
                 });
 
                 const closeButton = document.querySelector("[data-mobile-nav-close]");
                 if (closeButton) {
                     closeButton.addEventListener("click", (event) => {
                         event.preventDefault();
-                        setOpen(false);
+                        closePanel();
                     });
                 }
 
                 panel.addEventListener("click", (event) => {
                     if (event.target.closest("a")) {
-                        setOpen(false);
+                        closePanel();
                     }
                 });
             };
