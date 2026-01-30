@@ -49,6 +49,14 @@
                     setOpen(!panel.classList.contains(openClass));
                 });
 
+                const closeButton = document.querySelector("[data-mobile-nav-close]");
+                if (closeButton) {
+                    closeButton.addEventListener("click", (event) => {
+                        event.preventDefault();
+                        setOpen(false);
+                    });
+                }
+
                 panel.addEventListener("click", (event) => {
                     if (event.target.closest("a")) {
                         setOpen(false);
