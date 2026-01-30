@@ -29,6 +29,40 @@
 		<%- include('partials/overlays') %>
 		<div class="framer-aeoyb4-container"><!--$--><div></div><!--/$--></div></div><div id="template-overlay"></div><!--/$--><!--/$--></div><script src="inline/script-2.js"></script><script src="inline/script-3.js"></script>
     <script src="inline/script-4.js"></script>
+    <script>
+        (() => {
+            const initMobileNav = () => {
+                const toggle = document.querySelector("[data-mobile-nav-toggle]");
+                const panel = document.querySelector("[data-mobile-nav-panel]");
+                if (!toggle || !panel) return;
+
+                const openClass = "is-open";
+                const setOpen = (open) => {
+                    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+                    panel.setAttribute("aria-hidden", open ? "false" : "true");
+                    panel.classList.toggle(openClass, open);
+                };
+
+                setOpen(false);
+                toggle.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    setOpen(!panel.classList.contains(openClass));
+                });
+
+                panel.addEventListener("click", (event) => {
+                    if (event.target.closest("a")) {
+                        setOpen(false);
+                    }
+                });
+            };
+
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", initMobileNav);
+            } else {
+                initMobileNav();
+            }
+        })();
+    </script>
     
     <%- include('partials/framer-badge') %>
     <script src="inline/script-5.js"></script>
