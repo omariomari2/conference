@@ -132,3 +132,27 @@ body.mobile-nav-open {
 
 .mobile-nav-panel .framer-7763e4-container { height: auto; }
 .mobile-logo-only.framer-KQTqY { width: 100%; }
+
+/* FAQ accordion */
+#faq .framer-4qRSl {
+	gap: 0;
+}
+
+#faq .framer-4qRSl.is-open {
+	gap: 20px;
+}
+
+#faq .faq-answer {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+#faq .framer-4qRSl .framer-11z9b89 {
+	transition: transform 0.25s ease;
+}
+
+#faq .framer-4qRSl.is-open .framer-11z9b89 {
+	transform: rotate(45deg);
+}

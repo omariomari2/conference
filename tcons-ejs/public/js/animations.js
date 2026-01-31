@@ -7,9 +7,105 @@
     window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  const initFaq = () => {
+    const items = document.querySelectorAll("#faq .framer-4qRSl");
+    if (!items.length) return;
+
+    const answers = {
+      "What are the event’s main highlights?":
+        "Keynotes, hands-on workshops, and live demos focused on emerging IT trends and real-world applications.",
+      "Is there a dress code for the event?":
+        "Business casual is recommended. Comfortable attire is encouraged for workshops and networking.",
+      "Will there be on-site registration?":
+        "Yes, on-site registration is available, but we recommend registering early to avoid lines.",
+      "What is the cancellation policy?":
+        "Tickets are refundable up to 7 days before the event. After that, transfers are allowed.",
+      "Are there accommodations nearby?":
+        "Yes, there are multiple partner hotels within walking distance and along the main transit lines.",
+      "Are there opportunities for volunteering?":
+        "Yes, a limited number of volunteer roles are available. Contact us to apply."
+    };
+
+    items.forEach((item, index) => {
+      const question = item.querySelector(".framer-1m2n3p p");
+      if (!question) return;
+
+      const questionText = question.textContent.trim().replace(/\s+/g, " ");
+      const answerText = answers[questionText] || "Details will be shared soon.";
+
+      let answer = item.querySelector(".faq-answer");
+      if (!answer) {
+        answer = document.createElement("div");
+        answer.className = "framer-9dwzyp faq-answer";
+        answer.setAttribute("data-framer-name", "Answer");
+
+        const answerTextWrap = document.createElement("div");
+        answerTextWrap.className = "framer-1yqroe4";
+
+        const answerParagraph = document.createElement("p");
+        answerParagraph.className = "framer-text framer-styles-preset-1qr8uq3";
+        answerParagraph.setAttribute("data-styles-preset", "FqSrgzNRt");
+        answerParagraph.style.setProperty("--framer-text-alignment", "left");
+        answerParagraph.style.setProperty(
+          "--framer-text-color",
+          "var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, rgb(0, 39, 186))"
+        );
+        answerParagraph.textContent = answerText;
+
+        answerTextWrap.appendChild(answerParagraph);
+        answer.appendChild(answerTextWrap);
+        item.appendChild(answer);
+      }
+
+      const answerId = `faq-answer-${index}`;
+      answer.id = answerId;
+      item.setAttribute("role", "button");
+      item.setAttribute("aria-expanded", "false");
+      item.setAttribute("aria-controls", answerId);
+      item.classList.remove("is-open");
+      answer.style.maxHeight = "0px";
+      answer.style.opacity = "0";
+
+      const toggle = () => {
+        const isOpen = item.classList.toggle("is-open");
+        item.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        if (isOpen) {
+          answer.style.maxHeight = `${answer.scrollHeight}px`;
+          answer.style.opacity = "1";
+        } else {
+          answer.style.maxHeight = "0px";
+          answer.style.opacity = "0";
+        }
+      };
+
+      item.addEventListener("click", (event) => {
+        if (event.target.closest("a, button")) return;
+        toggle();
+      });
+
+      item.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          toggle();
+        }
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      items.forEach((item) => {
+        if (!item.classList.contains("is-open")) return;
+        const answer = item.querySelector(".faq-answer");
+        if (answer) {
+          answer.style.maxHeight = `${answer.scrollHeight}px`;
+        }
+      });
+    });
+  };
+
   const runAnimations = () => {
     if (!window.gsap || prefersReducedMotion()) {
       releasePreload();
+      initFaq();
       return;
     }
 
@@ -233,6 +329,8 @@
     attachImageExpand('[data-framer-background-image-wrapper="true"]', {
       scale: 0.06
     });
+
+    initFaq();
   };
 
   if (document.readyState === "loading") {
