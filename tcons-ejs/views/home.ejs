@@ -38,7 +38,24 @@
 
                 const openClass = "is-open";
                 const hasGsap = typeof window.gsap !== "undefined";
+                let scrollLockY = 0;
                 panel.style.willChange = "transform, opacity";
+
+                const lockScroll = () => {
+                    scrollLockY = window.scrollY || window.pageYOffset || 0;
+                    document.body.classList.add("mobile-nav-open");
+                    document.body.style.position = "fixed";
+                    document.body.style.top = `-${scrollLockY}px`;
+                    document.body.style.width = "100%";
+                };
+
+                const unlockScroll = () => {
+                    document.body.classList.remove("mobile-nav-open");
+                    document.body.style.position = "";
+                    document.body.style.top = "";
+                    document.body.style.width = "";
+                    window.scrollTo(0, scrollLockY);
+                };
 
                 const setOpen = (open) => {
                     toggle.setAttribute("aria-expanded", open ? "true" : "false");
@@ -49,13 +66,35 @@
                 const openPanel = () => {
                     if (panel.classList.contains(openClass)) return;
                     setOpen(true);
+                    lockScroll();
                     if (!hasGsap) return;
                     window.gsap.killTweensOf(panel);
                     window.gsap.fromTo(
                         panel,
-                        { opacity: 0, y: -16 },
-                        { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }
+                        { opacity: 0, y: -28 },
+                        {
+                            opacity: 1,
+                            y: 0,
+                            duration: 0.6,
+                            ease: "power3.out"
+                        }
                     );
+                    const links = panel.querySelectorAll("a, button");
+                    if (links.length) {
+                        window.gsap.killTweensOf(links);
+                        window.gsap.fromTo(
+                            links,
+                            { opacity: 0, y: 10 },
+                            {
+                                opacity: 1,
+                                y: 0,
+                                duration: 0.45,
+                                ease: "power3.out",
+                                stagger: 0.04,
+                                delay: 0.06
+                            }
+                        );
+                    }
                 };
 
                 const closePanel = () => {
@@ -63,17 +102,19 @@
                     toggle.setAttribute("aria-expanded", "false");
                     if (!hasGsap) {
                         setOpen(false);
+                        unlockScroll();
                         return;
                     }
                     window.gsap.killTweensOf(panel);
                     window.gsap.to(panel, {
                         opacity: 0,
-                        y: -12,
-                        duration: 0.25,
+                        y: -20,
+                        duration: 0.3,
                         ease: "power2.in",
                         onComplete: () => {
                             panel.setAttribute("aria-hidden", "true");
                             panel.classList.remove(openClass);
+                            unlockScroll();
                         }
                     });
                 };

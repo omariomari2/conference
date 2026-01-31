@@ -31,6 +31,8 @@
       '#hero [data-framer-name="Chips & H1"] p',
       '#hero [data-framer-name="Chips & H1"] h1',
       '#hero [data-framer-name="Hero Info Blocks"] .framer-O9UkP',
+      "#hero nav a.framer-jztfi",
+      '#hero nav a[data-framer-name="Nav"]',
       "#about",
       "#moments",
       "#faq",
@@ -61,14 +63,26 @@
       const heroInfoCards = hero.querySelectorAll(
         '[data-framer-name="Hero Info Blocks"] .framer-O9UkP'
       );
+      const heroLogo = hero.querySelectorAll("nav a.framer-jztfi");
+      const heroNavItems = hero.querySelectorAll(
+        'nav a[data-framer-name="Nav"]'
+      );
 
       const timeline = gsap.timeline({
         defaults: { duration: 0.9, ease: "power3.out" }
       });
 
-      setWillChange([...heroChips, ...heroHeadings, ...heroInfoCards]);
+      setWillChange([
+        ...heroLogo,
+        ...heroNavItems,
+        ...heroChips,
+        ...heroHeadings,
+        ...heroInfoCards
+      ]);
 
       timeline
+        .to(heroLogo, { y: 0, autoAlpha: 1, duration: 0.7 }, 0)
+        .to(heroNavItems, { y: 0, autoAlpha: 1, stagger: 0.06 }, 0.05)
         .to(heroChips, { y: 0, autoAlpha: 1, stagger: 0.08 }, 0)
         .to(heroHeadings, { y: 0, autoAlpha: 1, stagger: 0.08 }, 0.05)
         .to(heroInfoCards, { y: 0, autoAlpha: 1, stagger: 0.1 }, 0.2);
@@ -149,32 +163,48 @@
       });
     };
 
-    const attachHoverZoom = (cardSelector, mediaSelector) => {
-      const cards = document.querySelectorAll(cardSelector);
-      if (!cards.length) return;
+    const attachImageExpand = (wrapperSelector, config = {}) => {
+      const wrappers = document.querySelectorAll(wrapperSelector);
+      if (!wrappers.length) return;
 
-      cards.forEach((card) => {
-        const media = card.querySelector(mediaSelector);
+      const {
+        scale = 0.05,
+        durationIn = 0.35,
+        durationOut = 0.4
+      } = config;
+
+      const handled = new Set();
+
+      wrappers.forEach((wrapper) => {
+        const media = wrapper.querySelector("img");
         if (!media) return;
+        const card = wrapper.parentElement;
+        if (!card || handled.has(card)) return;
+        handled.add(card);
+
         const baseScale = gsap.getProperty(media, "scale") || 1;
         media.style.willChange = "transform";
 
-        card.addEventListener("mouseenter", () => {
+        const hoverIn = () =>
           gsap.to(media, {
-            scale: baseScale + 0.05,
-            duration: 0.35,
+            scale: baseScale + scale,
+            duration: durationIn,
             ease: "power3.out",
             overwrite: "auto"
           });
-        });
-        card.addEventListener("mouseleave", () => {
+
+        const hoverOut = () =>
           gsap.to(media, {
             scale: baseScale,
-            duration: 0.4,
+            duration: durationOut,
             ease: "power3.out",
             overwrite: "auto"
           });
-        });
+
+        card.addEventListener("mouseenter", hoverIn);
+        card.addEventListener("mouseleave", hoverOut);
+        card.addEventListener("focus", hoverIn);
+        card.addEventListener("blur", hoverOut);
       });
     };
 
@@ -194,24 +224,15 @@
       stagger: 0.12
     });
 
-    attachHoverLift(".framer-8CuKQ", { y: -10, scale: 1.03 });
-    attachHoverLift("#blog .framer-ODUSC", { y: -8, scale: 1.02 });
-    attachHoverLift("#partners .framer-yGQVR", { y: -8, scale: 1.03 });
-    attachHoverLift("#resources .framer-IbXOz", { y: -8, scale: 1.02 });
-    attachHoverLift('#testimonials [data-framer-name="Testimonial Card"]', {
-      y: -8,
-      scale: 1.02
-    });
     attachHoverLift('a[data-framer-name="Primary"]', {
       y: -4,
       scale: 1.01,
       shadow: "0 10px 22px rgba(0,0,0,0.2)"
     });
 
-    attachHoverZoom(
-      "#blog .framer-ODUSC",
-      '[data-framer-name="Blog Cover"]'
-    );
+    attachImageExpand('[data-framer-background-image-wrapper="true"]', {
+      scale: 0.06
+    });
   };
 
   if (document.readyState === "loading") {
