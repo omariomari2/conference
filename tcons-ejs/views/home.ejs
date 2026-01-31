@@ -47,12 +47,18 @@
                     document.body.style.width = "100%";
                 };
 
-                const unlockScroll = () => {
+                const unlockScroll = (scrollToId) => {
                     document.body.classList.remove("mobile-nav-open");
                     document.body.style.position = "";
                     document.body.style.top = "";
                     document.body.style.width = "";
-                    window.scrollTo(0, scrollLockY);
+                    if (scrollToId) {
+                        const el = document.getElementById(scrollToId);
+                        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                        else window.scrollTo(0, scrollLockY);
+                    } else {
+                        window.scrollTo(0, scrollLockY);
+                    }
                 };
 
                 const setOpen = (open) => {
@@ -95,12 +101,12 @@
                     }
                 };
 
-                const closePanel = () => {
+                const closePanel = (scrollToId) => {
                     if (!panel.classList.contains(openClass)) return;
                     toggle.setAttribute("aria-expanded", "false");
                     if (!hasGsap) {
                         setOpen(false);
-                        unlockScroll();
+                        unlockScroll(scrollToId);
                         return;
                     }
                     window.gsap.killTweensOf(panel);
@@ -112,7 +118,7 @@
                         onComplete: () => {
                             panel.setAttribute("aria-hidden", "true");
                             panel.classList.remove(openClass);
-                            unlockScroll();
+                            unlockScroll(scrollToId);
                         }
                     });
                 };
@@ -136,8 +142,12 @@
                 }
 
                 panel.addEventListener("click", (event) => {
-                    if (event.target.closest("a")) {
-                        closePanel();
+                    const link = event.target.closest("a");
+                    if (link) {
+                        const href = link.getAttribute("href") || "";
+                        const scrollToId = href.startsWith("#") ? href.slice(1) : null;
+                        if (scrollToId) event.preventDefault();
+                        closePanel(scrollToId);
                     }
                 });
             };
@@ -150,7 +160,7 @@
         })();
     </script>
     
-    <%- include('partials/framer-badge') %>
+    <!-- <%- include('partials/framer-badge') %> -->
     <script src="inline/script-5.js"></script>
                 <script src="inline/script-6.js" type="framer/appear" id="__framer__appearAnimationsContent"></script>
                 <script src="inline/script-7.js" type="framer/appear" id="__framer__breakpoints"></script><script src="inline/script-8.js" data-framer-appear-animation="reduce"></script><script src="inline/script-9.js"></script>

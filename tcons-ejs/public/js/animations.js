@@ -48,7 +48,7 @@
         answerParagraph.style.setProperty("--framer-text-alignment", "left");
         answerParagraph.style.setProperty(
           "--framer-text-color",
-          "var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, rgb(0, 39, 186))"
+          "var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50)"
         );
         answerParagraph.textContent = answerText;
 

@@ -32,9 +32,9 @@
 <!-- End of headStart -->
 <meta name="viewport" content="width=device-width" />
 <meta name="generator" content="Framer 5f2272d" />
-<title>IT/CONF – Large IT Conference 08/2024</title>
+<title>IT/CONF – Large IT Conference 03/26</title>
 <meta name="description"
-    content="Join us at IT Conference 2024 to lead the future of IT. Enjoy engaging keynotes and hands-on workshops, designed to inspire and connect you with industry leaders." />
+    content="Join us at IT Conference 2026 to lead the future of IT. Enjoy engaging keynotes and hands-on workshops, designed to inspire and connect you with industry leaders." />
 <meta name="framer-search-index"
     content="https://framerusercontent.com/sites/3lpNRwDMyvvLez3JQmCjUx/searchIndex-90daSQ4CmH0m.json" />
 <meta name="framer-search-index-fallback"
@@ -44,17 +44,20 @@
     media="(prefers-color-scheme: light)" />
 <link href="https://framerusercontent.com/images/rY3gfhGLcsXiYOrPJQj8aYL9Wo.png" rel="icon"
     media="(prefers-color-scheme: dark)" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="IT/CONF – Large IT Conference 08/2024" />
+<meta property="og:title" content="IT/CONF – Large IT Conference 03/26" />
 <meta property="og:description"
-    content="Join us at IT Conference 2024 to lead the future of IT. Enjoy engaging keynotes and hands-on workshops, designed to inspire and connect you with industry leaders." />
+    content="Join us at IT Conference 2026 to lead the future of IT. Enjoy engaging keynotes and hands-on workshops, designed to inspire and connect you with industry leaders." />
 <meta property="og:image" content="https://framerusercontent.com/assets/NUT9ebHmObC5dEGOm0Psco9uw1M.jpg" />
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="IT/CONF – Large IT Conference 08/2024" />
+<meta name="twitter:title" content="IT/CONF – Large IT Conference 03/26" />
 <meta name="twitter:description"
-    content="Join us at IT Conference 2024 to lead the future of IT. Enjoy engaging keynotes and hands-on workshops, designed to inspire and connect you with industry leaders." />
+    content="Join us at IT Conference 2026 to lead the future of IT. Enjoy engaging keynotes and hands-on workshops, designed to inspire and connect you with industry leaders." />
 <meta name="twitter:image" content="https://framerusercontent.com/assets/NUT9ebHmObC5dEGOm0Psco9uw1M.jpg" />
 
 <link rel="stylesheet" href="inline/style-1.css" data-framer-font-css="" />
@@ -70,12 +73,20 @@
         scroll-behavior: smooth;
     }
     :root {
-        --color-primary: #000a2e;
-        --color-primary-dark: #002099;
-        --color-primary-60: rgba(0, 39, 186, 0.6);
-        --color-primary-40: rgba(0, 39, 186, 0.4);
-        --color-primary-10: rgba(0, 39, 186, 0.1);
-        --color-primary-07: rgba(0, 39, 186, 0.07);
+        --hokey-pokey: #cd9933;
+        --cloud-burst: #1f2b50;
+        --ghost: #c1c6d5;
+        --storm-gray: #6e7484;
+        --givry: #f8eac2;
+        --twine: #c2a565;
+        --porcelain: #f7f9f9;
+
+        --color-primary: var(--cloud-burst);
+        --color-primary-dark: #151d38;
+        --color-primary-60: rgba(31, 43, 80, 0.6);
+        --color-primary-40: rgba(31, 43, 80, 0.4);
+        --color-primary-10: rgba(31, 43, 80, 0.1);
+        --color-primary-07: rgba(31, 43, 80, 0.07);
 
         --color-accent: #fff;
         --color-accent-light: #ab6767;
@@ -84,13 +95,24 @@
         --color-ink: #000a32;
         --color-ink-10: rgba(0, 10, 50, 0.1);
 
-        --color-surface: #f4f4f4;
+        --color-surface: var(--porcelain);
         --color-surface-alt: #e8eaf1;
         --color-surface-60: rgba(244, 244, 244, 0.6);
         --color-surface-40: rgba(244, 244, 244, 0.4);
         --color-surface-25: rgba(244, 244, 244, 0.25);
 
-        --font-size-12: 12px;
+        --font-size-xxs: 12px;
+        --font-size-xs: 14px;
+        --font-size-sm: 16px;
+        --font-size-md: 18px;
+        --font-size-lg: 20px;
+        --font-size-xl: 24px;
+        --font-size-2xl: 32px;
+        --font-size-3xl: 40px;
+        --font-size-4xl: 56px;
+        --font-size-5xl: 64px;
+
+        --font-size-12: var(--font-size-xxs);
         --font-size-14: var(--font-size-xs);
         --font-size-16: var(--font-size-sm);
         --font-size-18: var(--font-size-md);
@@ -107,16 +129,15 @@
         --font-size-104: 104px;
         --font-size-128: 128px;
 
-        --font-size-xxs: 20px;
-        --font-size-xs: 16px;
-        --font-size-sm: 16px;
-        --font-size-md: 18px;
-        --font-size-lg: 20px;
-        --font-size-xl: 24px;
-        --font-size-2xl: 32px;
-        --font-size-3xl: 40px;
-        --font-size-4xl: 56px;
-        --font-size-5xl: 64px;
+        --font-heading-hero: var(--font-size-128);
+        --font-heading-xl: var(--font-size-64);
+        --font-heading-lg: var(--font-size-48);
+        --font-heading-md: var(--font-size-40);
+        --font-heading-sm: var(--font-size-32);
+        --font-body-lg: var(--font-size-20);
+        --font-body: var(--font-size-16);
+        --font-body-sm: var(--font-size-14);
+        --font-label: var(--font-size-12);
     }
 
     body {

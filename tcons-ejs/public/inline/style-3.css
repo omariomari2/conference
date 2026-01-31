@@ -39,16 +39,16 @@ button {
 body {
     --token-3d3bb8af-3862-486e-bbcf-13680c9c9654: #ffb3c1;
     --token-674ae7db-883c-4cdd-b47c-e63333b9518d: #fdc0cb;
-    --token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96: #0027ba;
+    --token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96: #1f2b50;
     --token-207d6de8-e65a-4c79-8de2-bfe1b5677d83: #002099;
     --token-6212ea50-3a30-451c-b3f9-3d22f041bda8: #e8eaf1;
     --token-1f172f21-c328-4fba-b6c2-53f8778bbbc9: #f4f4f4;
     --token-3eb47e2b-24ee-4494-826c-6593e6aeffe5: #000a32;
     --token-7cb78164-3a77-4e07-b4d7-07255a2575f4: #ffb3c199;
-    --token-893d3660-6017-428e-8c48-0e2cf5fcc9f3: #0027ba99;
-    --token-196fa49f-dbc9-405d-9280-1691609daec1: #0027ba66;
-    --token-5ff3850a-5094-4c08-b0d7-43b1c2767902: #0027ba1a;
-    --token-36338cbc-6efb-445d-a11b-9ea1d69bbdbf: #0027ba12;
+    --token-893d3660-6017-428e-8c48-0e2cf5fcc9f3: #1f2b5099;
+    --token-196fa49f-dbc9-405d-9280-1691609daec1: #1f2b5066;
+    --token-5ff3850a-5094-4c08-b0d7-43b1c2767902: #1f2b501a;
+    --token-36338cbc-6efb-445d-a11b-9ea1d69bbdbf: #1f2b5012;
     --token-9e10feb8-ed6a-4d4d-b543-e3d6be62aecd: #f4f4f499;
     --token-05ba94f6-b5a9-4c96-952e-1a7c30f62227: #f4f4f466;
     --token-14d6b7de-ca3b-4a61-80ef-060d57ee2e26: #f4f4f440;
@@ -1516,7 +1516,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 }
 
 .framer-5KDmZ .framer-1mtq15q {
-    background-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    background-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     will-change: var(--framer-will-change-override, transform);
     border-radius: 12px;
     flex-flow: column;
@@ -1959,7 +1959,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 }
 
 .framer-5KDmZ .framer-qq9hzv {
-    background-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    background-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     will-change: var(--framer-will-change-override, transform);
     border-radius: 12px;
     flex-flow: column;
@@ -2003,7 +2003,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 88%;
     --framer-paragraph-spacing: 32px;
     --framer-text-alignment: center;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -2026,7 +2026,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 88%;
         --framer-paragraph-spacing: 32px;
         --framer-text-alignment: center;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -2050,7 +2050,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 88%;
         --framer-paragraph-spacing: 32px;
         --framer-text-alignment: center;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -2074,7 +2074,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -2098,7 +2098,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -2122,7 +2122,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 88%;
         --framer-paragraph-spacing: 24px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -2146,7 +2146,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 88%;
         --framer-paragraph-spacing: 24px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -3196,7 +3196,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 92%;
     --framer-paragraph-spacing: 20px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -3727,7 +3727,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 88%;
         --framer-paragraph-spacing: 24px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -3751,7 +3751,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 88%;
         --framer-paragraph-spacing: 24px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -4022,7 +4022,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -4046,7 +4046,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -4445,7 +4445,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 88%;
     --framer-paragraph-spacing: 24px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -4468,7 +4468,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 88%;
         --framer-paragraph-spacing: 24px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -4880,7 +4880,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 104%;
     --framer-paragraph-spacing: 20px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -4965,7 +4965,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -4989,7 +4989,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -5195,7 +5195,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -5219,7 +5219,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -5247,7 +5247,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 120%;
     --framer-paragraph-spacing: 20px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -5496,7 +5496,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 104%;
     --framer-paragraph-spacing: 20px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -5525,7 +5525,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -5764,7 +5764,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 104%;
     --framer-paragraph-spacing: 20px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -5793,7 +5793,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -5823,7 +5823,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -6090,7 +6090,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -6114,7 +6114,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -6142,7 +6142,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 120%;
     --framer-paragraph-spacing: 20px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -6169,7 +6169,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 104%;
     --framer-paragraph-spacing: 20px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -7094,7 +7094,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 88%;
     --framer-paragraph-spacing: 24px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -7117,7 +7117,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 88%;
         --framer-paragraph-spacing: 24px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -7141,7 +7141,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 88%;
         --framer-paragraph-spacing: 24px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -7359,7 +7359,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
     --framer-line-height: 104%;
     --framer-paragraph-spacing: 20px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -7382,7 +7382,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -7406,7 +7406,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
         --framer-line-height: 104%;
         --framer-paragraph-spacing: 20px;
         --framer-text-alignment: left;
-        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+        --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
         --framer-text-decoration: none;
         --framer-text-stroke-color: initial;
         --framer-text-stroke-width: initial;
@@ -7844,7 +7844,7 @@ html.lenis {
     --framer-line-height: 104%;
     --framer-paragraph-spacing: 20px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
@@ -7865,7 +7865,7 @@ html.lenis {
     --framer-line-height: 104%;
     --framer-paragraph-spacing: 20px;
     --framer-text-alignment: left;
-    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #0027ba);
+    --framer-text-color: var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);
     --framer-text-decoration: none;
     --framer-text-stroke-color: initial;
     --framer-text-stroke-width: initial;
