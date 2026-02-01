@@ -83,7 +83,7 @@
                     window.gsap.killTweensOf(panel);
                     window.gsap.fromTo(
                         panel,
-                        { opacity: 0, y: 28 },
+                        { opacity: 0, y: -28 },
                         {
                             opacity: 1,
                             y: 0,
@@ -120,7 +120,7 @@
                     window.gsap.killTweensOf(panel);
                     window.gsap.to(panel, {
                         opacity: 0,
-                        y: 20,
+                        y: -20,
                         duration: 0.3,
                         ease: "power2.in",
                         onComplete: () => {
