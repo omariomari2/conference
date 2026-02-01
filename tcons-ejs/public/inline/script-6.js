@@ -1,1 +1,0 @@
-{"119drnu":{"1bm1ulm":{"animate":{"opacity":1,"rotate":0,"rotateX":0,"rotateY":0,"scale":1,"skewX":0,"skewY":0,"transition":{"damping":60,"delay":0.15,"mass":0.1,"stiffness":400,"type":"spring"},"x":0,"y":0},"legacy":true,"initial":{"opacity":1,"rotate":0,"rotateX":0,"rotateY":0,"scale":1,"skewX":0,"skewY":0,"x":0,"y":38}}}}
