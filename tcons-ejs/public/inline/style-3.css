@@ -251,7 +251,7 @@ ol.framer-text,
 ul.framer-text,
 mark.framer-text,
 span.framer-text:not([data-text-fill]) {
-    font-family: var(--framer-blockquote-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-family: var(--framer-blockquote-font-family, var(--framer-font-family, Inter, sans-serif));
     font-style: var(--framer-blockquote-font-style, var(--framer-font-style, normal));
     font-weight: var(--framer-blockquote-font-weight, var(--framer-font-weight, 400));
     color: var(--framer-blockquote-text-color, var(--framer-text-color, #000));
@@ -377,7 +377,7 @@ li.framer-text>ol.framer-text:nth-child(2) {
 
 code.framer-text,
 code.framer-text span.framer-text:not([data-text-fill]) {
-    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, sans-serif));
     font-style: var(--framer-blockquote-font-style, var(--framer-code-font-style, var(--framer-font-style, normal)));
     font-weight: var(--framer-blockquote-font-weight, var(--framer-code-font-weight, var(--framer-font-weight, 400)));
     color: var(--framer-blockquote-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)));
@@ -406,7 +406,7 @@ a.framer-text,
 a.framer-text span.framer-text:not([data-text-fill]),
 span.framer-text[data-nested-link],
 span.framer-text[data-nested-link] span.framer-text:not([data-text-fill]) {
-    font-family: var(--framer-blockquote-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+    font-family: var(--framer-blockquote-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif)));
     font-style: var(--framer-blockquote-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
     font-weight: var(--framer-blockquote-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
     color: var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
@@ -446,7 +446,7 @@ code.framer-text a.framer-text,
 code.framer-text a.framer-text span.framer-text:not([data-text-fill]),
 code.framer-text span.framer-text[data-nested-link],
 code.framer-text span.framer-text[data-nested-link] span.framer-text:not([data-text-fill]) {
-    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, sans-serif));
     font-style: var(--framer-blockquote-font-style, var(--framer-code-font-style, var(--framer-font-style, normal)));
     font-weight: var(--framer-blockquote-font-weight, var(--framer-code-font-weight, var(--framer-font-weight, 400)));
     color: var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))));
@@ -467,7 +467,7 @@ a.framer-text:hover,
 a.framer-text:hover span.framer-text:not([data-text-fill]),
 span.framer-text[data-nested-link]:hover,
 span.framer-text[data-nested-link]:hover span.framer-text:not([data-text-fill]) {
-    font-family: var(--framer-link-hover-font-family, var(--framer-blockquote-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));
+    font-family: var(--framer-link-hover-font-family, var(--framer-blockquote-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif))));
     font-style: var(--framer-link-hover-font-style, var(--framer-blockquote-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));
     font-weight: var(--framer-link-hover-font-weight, var(--framer-blockquote-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));
     color: var(--framer-link-hover-text-color, var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
@@ -506,7 +506,7 @@ code.framer-text a.framer-text:hover,
 code.framer-text a.framer-text:hover span.framer-text:not([data-text-fill]),
 code.framer-text span.framer-text[data-nested-link]:hover,
 code.framer-text span.framer-text[data-nested-link]:hover span.framer-text:not([data-text-fill]) {
-    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, sans-serif));
     font-style: var(--framer-blockquote-font-style, var(--framer-code-font-style, var(--framer-font-style, normal)));
     font-weight: var(--framer-blockquote-font-weight, var(--framer-code-font-weight, var(--framer-font-weight, 400)));
     color: var(--framer-link-hover-text-color, var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)))));
@@ -527,7 +527,7 @@ a.framer-text[data-framer-page-link-current],
 a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]),
 span.framer-text[data-framer-page-link-current],
 span.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]) {
-    font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+    font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif)));
     font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
     font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
     color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
@@ -566,7 +566,7 @@ code.framer-text a.framer-text[data-framer-page-link-current],
 code.framer-text a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]),
 code.framer-text span.framer-text[data-framer-page-link-current],
 code.framer-text span.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]) {
-    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, sans-serif));
     font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
     font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
     color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))));
@@ -588,7 +588,7 @@ a.framer-text[data-framer-page-link-current]:hover,
 a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]),
 span.framer-text[data-framer-page-link-current]:hover,
 span.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
-    font-family: var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));
+    font-family: var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif))));
     font-style: var(--framer-link-hover-font-style, var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));
     font-weight: var(--framer-link-hover-font-weight, var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));
     color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
@@ -627,7 +627,7 @@ code.framer-text a.framer-text[data-framer-page-link-current]:hover,
 code.framer-text a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]),
 code.framer-text span.framer-text[data-framer-page-link-current]:hover,
 code.framer-text span.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
-    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, sans-serif));
     font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
     font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
     color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)))));
@@ -655,7 +655,7 @@ code.framer-text span.framer-text[data-framer-page-link-current]:hover span.fram
 }
 
 .text-styles-preset-reset.framer-text {
-    --framer-font-family: Inter, Inter Placeholder, sans-serif;
+    --framer-font-family: Inter, sans-serif;
     --framer-font-style: normal;
     --framer-font-weight: 500;
     --framer-text-color: #000;
@@ -776,7 +776,7 @@ th.framer-text {
 }
 
 [data-framer-component-type=DeprecatedRichText] .text-styles-preset-reset {
-    --framer-font-family: Inter, Inter Placeholder, sans-serif;
+    --framer-font-family: Inter, sans-serif;
     --framer-font-style: normal;
     --framer-font-weight: 500;
     --framer-text-color: #000;
@@ -814,7 +814,7 @@ th.framer-text {
 [data-framer-component-type=DeprecatedRichText] ol,
 [data-framer-component-type=DeprecatedRichText] ul,
 [data-framer-component-type=DeprecatedRichText] span:not([data-text-fill]) {
-    font-family: var(--framer-font-family, Inter, Inter Placeholder, sans-serif);
+    font-family: var(--framer-font-family, Inter, sans-serif);
     font-style: var(--framer-font-style, normal);
     font-weight: var(--framer-font-weight, 400);
     color: var(--framer-text-color, #000);
@@ -850,7 +850,7 @@ th.framer-text {
 
 [data-framer-component-type=DeprecatedRichText] a,
 [data-framer-component-type=DeprecatedRichText] a span:not([data-text-fill]) {
-    font-family: var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+    font-family: var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif));
     font-style: var(--framer-link-font-style, var(--framer-font-style, normal));
     font-weight: var(--framer-link-font-weight, var(--framer-font-weight, 400));
     color: var(--framer-link-text-color, var(--framer-text-color, #000));
@@ -862,7 +862,7 @@ th.framer-text {
 
 [data-framer-component-type=DeprecatedRichText] a:hover,
 [data-framer-component-type=DeprecatedRichText] a:hover span:not([data-text-fill]) {
-    font-family: var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+    font-family: var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif)));
     font-style: var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
     font-weight: var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
     color: var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
@@ -874,7 +874,7 @@ th.framer-text {
 
 [data-framer-component-type=DeprecatedRichText] a[data-framer-page-link-current],
 [data-framer-component-type=DeprecatedRichText] a[data-framer-page-link-current] span:not([data-text-fill]):not([data-nested-link]) {
-    font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+    font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif)));
     font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
     font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
     color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
@@ -886,7 +886,7 @@ th.framer-text {
 
 [data-framer-component-type=DeprecatedRichText] a[data-framer-page-link-current]:hover,
 [data-framer-component-type=DeprecatedRichText] a[data-framer-page-link-current]:hover span:not([data-text-fill]):not([data-nested-link]) {
-    font-family: var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));
+    font-family: var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif))));
     font-style: var(--framer-link-hover-font-style, var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));
     font-weight: var(--framer-link-hover-font-weight, var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));
     color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
@@ -1991,8 +1991,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-aPaL6 .framer-styles-preset-2gzc8k:not(.rich-text-wrapper),
 .framer-aPaL6 .framer-styles-preset-2gzc8k.rich-text-wrapper h1 {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-    --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
+    --framer-font-family-bold: "Space Grotesk", sans-serif;
     --framer-font-open-type-features: normal;
     --framer-font-size: var(--font-size-128);
     --framer-font-style: normal;
@@ -2014,8 +2014,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-aPaL6 .framer-styles-preset-2gzc8k:not(.rich-text-wrapper),
     .framer-aPaL6 .framer-styles-preset-2gzc8k.rich-text-wrapper h1 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-104);
         --framer-font-style: normal;
@@ -2038,8 +2038,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-aPaL6 .framer-styles-preset-2gzc8k:not(.rich-text-wrapper),
     .framer-aPaL6 .framer-styles-preset-2gzc8k.rich-text-wrapper h1 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-48);
         --framer-font-style: normal;
@@ -2062,8 +2062,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-32);
         --framer-font-style: normal;
@@ -2086,8 +2086,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-28);
         --framer-font-style: normal;
@@ -2110,8 +2110,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-9oQTG .framer-styles-preset-1tvpdge:not(.rich-text-wrapper),
     .framer-9oQTG .framer-styles-preset-1tvpdge.rich-text-wrapper h2 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-56);
         --framer-font-style: normal;
@@ -2134,8 +2134,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-9oQTG .framer-styles-preset-1tvpdge:not(.rich-text-wrapper),
     .framer-9oQTG .framer-styles-preset-1tvpdge.rich-text-wrapper h2 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-40);
         --framer-font-style: normal;
@@ -3178,7 +3178,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-okecu .framer-styles-preset-xkd2ey:not(.rich-text-wrapper),
 .framer-okecu .framer-styles-preset-xkd2ey.rich-text-wrapper p {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
     --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
@@ -3715,8 +3715,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-9oQTG .framer-styles-preset-1tvpdge:not(.rich-text-wrapper),
     .framer-9oQTG .framer-styles-preset-1tvpdge.rich-text-wrapper h2 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-56);
         --framer-font-style: normal;
@@ -3739,8 +3739,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-9oQTG .framer-styles-preset-1tvpdge:not(.rich-text-wrapper),
     .framer-9oQTG .framer-styles-preset-1tvpdge.rich-text-wrapper h2 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-40);
         --framer-font-style: normal;
@@ -4010,8 +4010,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-32);
         --framer-font-style: normal;
@@ -4034,8 +4034,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-28);
         --framer-font-style: normal;
@@ -4433,8 +4433,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-77WjF .framer-styles-preset-c3lucd:not(.rich-text-wrapper),
 .framer-77WjF .framer-styles-preset-c3lucd.rich-text-wrapper p {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-    --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
+    --framer-font-family-bold: "Space Grotesk", sans-serif;
     --framer-font-open-type-features: normal;
     --framer-font-size: var(--font-size-64);
     --framer-font-style: normal;
@@ -4456,8 +4456,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-77WjF .framer-styles-preset-c3lucd:not(.rich-text-wrapper),
     .framer-77WjF .framer-styles-preset-c3lucd.rich-text-wrapper p {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-54);
         --framer-font-style: normal;
@@ -4868,8 +4868,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-smvMM .framer-styles-preset-a8op9b:not(.rich-text-wrapper),
 .framer-smvMM .framer-styles-preset-a8op9b.rich-text-wrapper h4 {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-    --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
+    --framer-font-family-bold: "Space Grotesk", sans-serif;
     --framer-font-open-type-features: normal;
     --framer-font-size: var(--font-size-24);
     --framer-font-style: normal;
@@ -4953,8 +4953,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-32);
         --framer-font-style: normal;
@@ -4977,8 +4977,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-28);
         --framer-font-style: normal;
@@ -5183,8 +5183,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-32);
         --framer-font-style: normal;
@@ -5207,8 +5207,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-28);
         --framer-font-style: normal;
@@ -5229,7 +5229,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-WggaU .framer-styles-preset-1qr8uq3:not(.rich-text-wrapper),
 .framer-WggaU .framer-styles-preset-1qr8uq3.rich-text-wrapper p {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
     --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
@@ -5478,7 +5478,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-nBnFU .framer-styles-preset-kcwhl8:not(.rich-text-wrapper),
 .framer-nBnFU .framer-styles-preset-kcwhl8.rich-text-wrapper p {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
     --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
@@ -5507,7 +5507,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-nBnFU .framer-styles-preset-kcwhl8:not(.rich-text-wrapper),
     .framer-nBnFU .framer-styles-preset-kcwhl8.rich-text-wrapper p {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
         --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
         --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
         --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
@@ -5746,7 +5746,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-I6U7k .framer-styles-preset-1oxs56i:not(.rich-text-wrapper),
 .framer-I6U7k .framer-styles-preset-1oxs56i.rich-text-wrapper p {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
     --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
@@ -5775,7 +5775,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-I6U7k .framer-styles-preset-1oxs56i:not(.rich-text-wrapper),
     .framer-I6U7k .framer-styles-preset-1oxs56i.rich-text-wrapper p {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
         --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
         --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
         --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
@@ -5805,7 +5805,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-I6U7k .framer-styles-preset-1oxs56i:not(.rich-text-wrapper),
     .framer-I6U7k .framer-styles-preset-1oxs56i.rich-text-wrapper p {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
         --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
         --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
         --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
@@ -6078,8 +6078,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-32);
         --framer-font-style: normal;
@@ -6102,8 +6102,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-28);
         --framer-font-style: normal;
@@ -6124,7 +6124,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-7khpm .framer-styles-preset-12jhtys:not(.rich-text-wrapper),
 .framer-7khpm .framer-styles-preset-12jhtys.rich-text-wrapper p {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
     --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
@@ -6151,7 +6151,7 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-vRT4u .framer-styles-preset-1ao2sqs:not(.rich-text-wrapper),
 .framer-vRT4u .framer-styles-preset-1ao2sqs.rich-text-wrapper p {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
     --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
@@ -7082,8 +7082,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-9oQTG .framer-styles-preset-1tvpdge:not(.rich-text-wrapper),
 .framer-9oQTG .framer-styles-preset-1tvpdge.rich-text-wrapper h2 {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-    --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
+    --framer-font-family-bold: "Space Grotesk", sans-serif;
     --framer-font-open-type-features: normal;
     --framer-font-size: var(--font-size-64);
     --framer-font-style: normal;
@@ -7105,8 +7105,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-9oQTG .framer-styles-preset-1tvpdge:not(.rich-text-wrapper),
     .framer-9oQTG .framer-styles-preset-1tvpdge.rich-text-wrapper h2 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-56);
         --framer-font-style: normal;
@@ -7129,8 +7129,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-9oQTG .framer-styles-preset-1tvpdge:not(.rich-text-wrapper),
     .framer-9oQTG .framer-styles-preset-1tvpdge.rich-text-wrapper h2 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-40);
         --framer-font-style: normal;
@@ -7347,8 +7347,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
 .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
 .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-    --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
+    --framer-font-family-bold: "Space Grotesk", sans-serif;
     --framer-font-open-type-features: normal;
     --framer-font-size: var(--font-size-36);
     --framer-font-style: normal;
@@ -7370,8 +7370,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-32);
         --framer-font-style: normal;
@@ -7394,8 +7394,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,
 
     .framer-0O0Dc .framer-styles-preset-1wi1urh:not(.rich-text-wrapper),
     .framer-0O0Dc .framer-styles-preset-1wi1urh.rich-text-wrapper h3 {
-        --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-        --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+        --framer-font-family: "Space Grotesk", sans-serif;
+        --framer-font-family-bold: "Space Grotesk", sans-serif;
         --framer-font-open-type-features: normal;
         --framer-font-size: var(--font-size-28);
         --framer-font-style: normal;
@@ -7826,7 +7826,7 @@ html.lenis {
 
 .framer-jfnQe .framer-styles-preset-rksdrf:not(.rich-text-wrapper),
 .framer-jfnQe .framer-styles-preset-rksdrf.rich-text-wrapper p {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
     --framer-font-family-bold: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-bold-italic: "Inter", "Inter Placeholder", sans-serif;
     --framer-font-family-italic: "Inter", "Inter Placeholder", sans-serif;
@@ -7853,8 +7853,8 @@ html.lenis {
 
 .framer-0Zesc .framer-styles-preset-1gggelo:not(.rich-text-wrapper),
 .framer-0Zesc .framer-styles-preset-1gggelo.rich-text-wrapper p {
-    --framer-font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
-    --framer-font-family-bold: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    --framer-font-family: "Space Grotesk", sans-serif;
+    --framer-font-family-bold: "Space Grotesk", sans-serif;
     --framer-font-open-type-features: normal;
     --framer-font-size: var(--font-size-20);
     --framer-font-style: normal;
