@@ -47,6 +47,14 @@
                     document.body.style.width = "100%";
                 };
 
+                const restoreScrollPosition = (targetY) => {
+                    const html = document.documentElement;
+                    const previousBehavior = html.style.scrollBehavior;
+                    html.style.scrollBehavior = "auto";
+                    window.scrollTo(0, targetY);
+                    html.style.scrollBehavior = previousBehavior;
+                };
+
                 const unlockScroll = (scrollToId) => {
                     document.body.classList.remove("mobile-nav-open");
                     document.body.style.position = "";
@@ -55,9 +63,9 @@
                     if (scrollToId) {
                         const el = document.getElementById(scrollToId);
                         if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-                        else window.scrollTo(0, scrollLockY);
+                        else restoreScrollPosition(scrollLockY);
                     } else {
-                        window.scrollTo(0, scrollLockY);
+                        restoreScrollPosition(scrollLockY);
                     }
                 };
 
@@ -75,7 +83,7 @@
                     window.gsap.killTweensOf(panel);
                     window.gsap.fromTo(
                         panel,
-                        { opacity: 0, y: -28 },
+                        { opacity: 0, y: 28 },
                         {
                             opacity: 1,
                             y: 0,
@@ -112,7 +120,7 @@
                     window.gsap.killTweensOf(panel);
                     window.gsap.to(panel, {
                         opacity: 0,
-                        y: -20,
+                        y: 20,
                         duration: 0.3,
                         ease: "power2.in",
                         onComplete: () => {
