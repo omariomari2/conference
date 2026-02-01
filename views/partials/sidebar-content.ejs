@@ -1,4 +1,5 @@
-<div class="framer-pmae8q" data-framer-name="Side Bar Content"><!--$--><div class="framer-7763e4-container">
+<% const shouldShowLocation = (typeof locals !== "undefined" && Object.prototype.hasOwnProperty.call(locals, "showLocation")) ? locals.showLocation : true; %>
+<div class="framer-pmae8q" data-framer-name="Side Bar Content"><!--$--><% if (shouldShowLocation) { %><div class="framer-7763e4-container">
 	<div class="framer-OvMDp framer-0O0Dc framer-1d1hio9 framer-v-1d1hio9" data-framer-name="Default" style="border-bottom-left-radius:12px;border-bottom-right-radius:12px;border-top-left-radius:12px;border-top-right-radius:12px;height:100%;width:100%">
 		<div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="async" width="2000" height="1334" sizes="(min-width: 1160px) calc(max((min(100vw, 1920px) - 72px) / 8, 1px) * 2 + 8px), (min-width: 768px) and (max-width: 1159.98px) calc(max((min(100vw, 1920px) - 72px) / 8, 1px) * 2 + 8px), (max-width: 767.98px) calc(max((min(100vw, 1920px) - 72px) / 8, 1px) * 2 + 8px)" srcset="https://ik.imagekit.io/dr5fryhth/conference/venue.avif 512w,https://ik.imagekit.io/dr5fryhth/conference/venue.avif 1024w,https://ik.imagekit.io/dr5fryhth/conference/venue.avif 2000w" src="https://ik.imagekit.io/dr5fryhth/conference/venue.avif" alt="" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover" data-framer-original-sizes="calc(max((min(100vw, 1920px) - 72px) / 8, 1px) * 2 + 8px)" /></div>
 		<div class="framer-6q5t4g" data-framer-component-type="RichTextContainer" style="--extracted-a0htzi:var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none">
@@ -15,7 +16,7 @@
 	</div>
 </a><!--/$--></div>
 	</div>
-</div><!--/$--><div class="framer-mo9var-container">
+</div><!--/$--><% } %><div class="framer-mo9var-container">
 	<div class="framer-pkIfI framer-0O0Dc framer-WggaU framer-1sdaoc framer-v-1sdaoc" data-framer-name="Default" style="background-color:var(--token-6df0ccc7-0a3b-4fc4-b4e5-e2e38aedab96, #1f2b50);border-bottom-left-radius:12px;border-bottom-right-radius:12px;border-top-left-radius:12px;border-top-right-radius:12px;width:100%">
 		<div class="framer-quo1iz" data-framer-name="Ticket Content">
 			<div class="framer-1s0hbo0" data-framer-name="Image" style="border-bottom-left-radius:6px;border-bottom-right-radius:6px;border-top-left-radius:6px;border-top-right-radius:6px">
@@ -56,4 +57,3 @@
 </a><!--/$--></div>
 	</div>
 </div></div>
-
